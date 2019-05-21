@@ -1,0 +1,15 @@
+branches:
+    only:
+        - master
+   
+language: bash
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      
+script: 
+  - cd tests
+  - ./test_ubuntu18.sh
