@@ -7,9 +7,9 @@ language: bash
 matrix:
   include:
     - os: linux
-      dist: bionic
+      dist: xenial
       sudo: required
       
 script: 
   - cd tests
-  - ./test_ubuntu18.sh
+  - ./test_ubuntu16.sh
