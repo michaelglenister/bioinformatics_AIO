@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This was written for xenial, but may work for later distros as well (with some tweaking)
+# This was written for bionic, but may work for later distros as well (with some tweaking)
 read -p "Enter your username: " username
 # Check username correctness
 [[ $(grep "^${username}:" /etc/passwd) ]] || (read -p "Invalid user name. Exiting" && exit)
